@@ -1,12 +1,13 @@
-# Definición del provider que ocuparemos
+# Definicion del provider que ocuparemos
 provider "azurerm" {
-  features {}
+    features {}
+    subscription_id = "escribe_tu_subscription_id"
 }
 
-# Se crea el grupo de recursos, al cual se asociarán los demás recursos
+# Se crea el grupo de recursos, al cual se asociarán los demas recursos
 resource "azurerm_resource_group" "rg" {
-  name     = var.name_function
-  location = var.location
+    name     = var.name_function
+    location = var.location
 }
 
 # Se crea un Storage Account, para asociarlo al function app (recomendación de la documentación).
@@ -80,5 +81,3 @@ resource "azurerm_function_app_function" "faf" {
     ]
   })
 }
-
-
