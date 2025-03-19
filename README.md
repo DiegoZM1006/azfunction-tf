@@ -86,6 +86,7 @@ terraform apply
 ![Imagen 9_1. Terraform Apply](images/image_9_1.png)
 ![Imagen 9_2. Terraform Apply](images/image_9_2.png)
 ![Imagen 9_3. Terraform Apply](images/image_9_3.png)
+
 Confirmamos con `yes` cuando se nos solicite.
 
 
